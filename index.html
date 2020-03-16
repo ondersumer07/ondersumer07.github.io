@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel='manifest' href='/manifest.json'>
+  <link rel='manifest' href='/manifest.webmanifest'>
 </head>
 
 <body>
@@ -54,6 +54,13 @@
 
 
   </div>
+  <script src="/upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content-url': 'offline.html'
+      'assets': ['css/offline.css']
+    });
+  </script>
   <script src="main.js"></script>
 </body>
 
