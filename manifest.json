@@ -5,5 +5,17 @@
 	"start_url" : "https://ondersumer07.github.io/vinematik/",
 	"display" : "standalone",
 	"orientation" : "portrait",
-	"lang" : "Turkish"
+	"lang" : "Turkish",
+  "theme_color": "#00adb5",
+  "icons": [
+  {
+    "src": "/images/icons-256.png",
+    "type": "image/png",
+    "sizes": "256x256"
+  },
+  {
+    "src": "/images/icons-512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }
 }
