@@ -2,9 +2,9 @@
 	"name" : "Vinematik",
 	"short_name" : "Vinematik",
 	"description" : "Vine uygulaması.",
-	"start_url" : "https://ondersumer07.github.io/vinematik/",
+	"start_url" : "/",
 	"display" : "standalone",
-	"orientation" : "portrait",
+	"orientation" : "any",
 	"lang" : "Turkish",
   "theme_color": "#00adb5",
   "icons": [
