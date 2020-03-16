@@ -132,6 +132,6 @@ document.addEventListener("keydown", function(e){
   }
 });
 
-document.addEventListener('swiped-right', function(e) {
+document.addEventListener('swiped-left', function(e) {
     newVideo()
 });
