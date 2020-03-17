@@ -250,15 +250,10 @@ a {
 
 /* STANDALONE */
 
-@media all and (display-mode: standalone){
-  #btn-install {
+@media all and (display-mode: standalone) {
+  #btn-install-mobile{
     display: none;
   }
-
-  #btn-install-mobile {
-    display: none;
-  }
-
 }
 
 
