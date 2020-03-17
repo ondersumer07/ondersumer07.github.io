@@ -17,8 +17,6 @@ self.addEventListener('install', event => {
   );
 });
 
-self.addEventListener('fetch', function(event) {});
-
 //LOADING FILES WHEN OFFLINE//
 self.addEventListener('fetch', event => {
   console.log('Fetch event for ', event.request.url);
