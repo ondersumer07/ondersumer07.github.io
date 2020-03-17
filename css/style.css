@@ -415,12 +415,9 @@ a {
 /* STANDALONE */
 
 @media all and (display-mode: standalone) {
-  /* #btn-install-mobile{
-    display: none;
-  } */
 
-  body {
-    background-color: yellow;
+  #btn-install-mobile{
+    display: none;
   }
 
 }
