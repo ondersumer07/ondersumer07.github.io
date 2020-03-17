@@ -87,7 +87,7 @@ self.addEventListener('fetch', event => {
 
     }).catch(error => {
       console.log('Error, ', error);
-      return caches.match('offline.html');
+      return caches.match('./offline.html');
 
       // TODO 6 - Respond with custom offline page
 
