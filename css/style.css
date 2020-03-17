@@ -248,13 +248,7 @@ a {
   }
 }
 
-/* STANDALONE */
 
-@media all and (display-mode: fullscreen) {
-  #btn-install-mobile{
-    display: none;
-  }
-}
 
 
 @media (max-width:1281px) {
@@ -414,6 +408,19 @@ a {
     margin:0;
     font-size: 1.2rem;
     width: 100%;
+  }
+
+}
+
+/* STANDALONE */
+
+@media all and (display-mode: standalone) {
+  /* #btn-install-mobile{
+    display: none;
+  } */
+
+  body {
+    background-color: yellow;
   }
 
 }

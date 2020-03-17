@@ -31,7 +31,7 @@
   ],
   "start_url": "https://ondersumer07.github.io/vinematik/",
   "background_color": "#00adb5",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "/",
   "theme_color": "#00adb5"
 }
