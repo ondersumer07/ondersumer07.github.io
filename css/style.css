@@ -248,6 +248,18 @@ a {
   }
 }
 
+/* STANDALONE */
+
+@media all and (display-mode: standalone){
+  #btn-install {
+    display: none;
+  }
+
+  #btn-install-mobile {
+    display: none;
+  }
+
+}
 
 
 @media (max-width:1281px) {
