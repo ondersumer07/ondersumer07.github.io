@@ -110,6 +110,19 @@
 
 //Main.js
 
+window.addEventListener("load", () => {
+  registerSW();
+});
+
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('./sw.js');
+    } catch (e) {
+      console.log(`SW registration failed`);
+    }
+  }
+}
 
 document.getElementById("vsrc").src = Math.floor((Math.random() * 3) + 1) + ".mp4";
 document.getElementById("videoEl").load();
