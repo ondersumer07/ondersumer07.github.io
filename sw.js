@@ -1,8 +1,8 @@
 const cacheName = 'offline-vinematik';
 const staticAssets = [
-  './',
+  // './',
   './offline.html',
-  './offline.css',
+  './css/offline.css',
 ];
 
 self.addEventListener('install', async e => {
