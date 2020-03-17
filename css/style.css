@@ -250,7 +250,7 @@ a {
 
 /* STANDALONE */
 
-@media all and (display-mode: standalone) {
+@media all and (display-mode: fullscreen) {
   #btn-install-mobile{
     display: none;
   }
