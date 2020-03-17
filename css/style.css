@@ -77,6 +77,8 @@ p {
 
 .btn-light:active {
   margin: 0;
+  position: relative;
+  top: 1px
 }
 
 .btn-outline-light {
@@ -306,6 +308,12 @@ a {
     width: 100%;
   }
 
+  #btn-mobile-a {
+    display: block;
+    margin: 4% 0;
+    font-size: 1.2rem;
+    width: 100%;
+  }
 
 
 }
