@@ -187,6 +187,20 @@ a {
   color: #e4e4e4;
 }
 
+.guide-back-to-main a{
+  text-decoration: underline;
+}
+
+.guide-back-to-main {
+  font-size: 1rem;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+.guide-ios {
+  margin-top: 5%;
+}
+
 .guide-main-title {
   font-size: 2.5rem;
   text-align: center;
