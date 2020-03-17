@@ -234,6 +234,20 @@ a {
   font-size: 1.5rem;
 }
 
+/* GUIDE APPLE/ANDROID */
+
+@supports (-webkit-touch-callout:none) {
+  .guide-android{
+    display: none;
+  }
+}
+
+@supports not (-webkit-touch-callout:none) {
+  .guide-ios{
+    display: none;
+  }
+}
+
 
 
 @media (max-width:1281px) {
