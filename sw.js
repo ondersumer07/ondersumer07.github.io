@@ -51,7 +51,7 @@ const filesToCache = [
   './css/offline.css',
 ];
 
-const staticCacheName = 'pages-cache-v1';
+const staticCacheName = 'pages-cache-v2';
 
 self.addEventListener('install', event => {
   console.log('Attempting to install service worker and cache static assets');
@@ -88,9 +88,25 @@ self.addEventListener('fetch', event => {
     }).catch(error => {
       console.log('Error, ', error);
       return caches.match('./offline.html');
+    })
+  );
+});
+// TODO 6 - Respond with custom offline page
 
-      // TODO 6 - Respond with custom offline page
+self.addEventListener('activate', event => {
+  console.log('Activating new service worker...');
 
+  const cacheWhitelist = [staticCacheName];
+
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
     })
   );
 });
