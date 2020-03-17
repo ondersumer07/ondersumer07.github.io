@@ -13,7 +13,7 @@
 
   <script src="https://kit.fontawesome.com/fcea854313.js" crossorigin="anonymous"></script>
 
-  <link rel="icon" href="favico.png" type="image/png"/>
+  <link rel="icon" href="favico.png" type="image/png" />
 
   <link href="https://fonts.googleapis.com/css?family=Inter:400,600,800|Ubuntu:700&display=swap" rel="stylesheet">
 
@@ -31,7 +31,14 @@
       <div class="header-items">
         <h1 class="header-title"><a href="#">Vinematik</a></h1>
 
-        <button class="btn-light btn-outline-light btn-vine"><a href="https://forms.gle/HfHbjrFVALLm3wGt8" target="_blank">Vine Gönder</a></button>
+        <div class="header-buttons">
+
+          <button class="btn-light btn-outline-light btn-vine"><a href="https://forms.gle/HfHbjrFVALLm3wGt8" target="_blank">Vine Gönder</a></button>
+
+          <button id="btn-install" class="btn-light btn-outline-light btn-vine">Uygulamayı indir <i class="fas fa-arrow-circle-down"></i></button>
+
+        </div>
+
       </div>
 
     </div>
@@ -49,6 +56,9 @@
         <a href="#" class="btn-next btn-light" onclick="newVideo()">Yeni Vine <i class="fas fa-angle-right"></i></a>
 
         <button class="btn-light btn-outline-light btn-vine" id="btn-mobile"><a href="https://forms.gle/HfHbjrFVALLm3wGt8" target="_blank">Vine Gönder</a></button>
+
+        <button id="btn-install-mobile" class="btn-light btn-outline-light btn-vine">Uygulamayı indir <i class="fas fa-arrow-circle-down"></i></button>
+
         <p class="small-laptop"><i>Sağ ok tuşuna basarak bir sonraki vine'a geçebilirsin!</i></p>
       </div>
       <p class="small-desktop"><i>Sağ ok tuşuna basarak bir sonraki vine'a geçebilirsin!</i></p>
