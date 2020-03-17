@@ -124,8 +124,12 @@ async function registerSW() {
   }
 }
 
-document.getElementById("vsrc").src = Math.floor((Math.random() * 3) + 1) + ".mp4";
-document.getElementById("videoEl").load();
+window.addEventListener("load", () => {
+  newVideo();
+});
+
+// document.getElementById("vsrc").src = Math.floor((Math.random() * 3) + 1) + ".mp4";
+// document.getElementById("videoEl").load();
 
 function newVideo(){
   document.getElementById("vsrc").src = Math.floor((Math.random() * 3) + 1) + ".mp4";
