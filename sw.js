@@ -46,9 +46,9 @@
 
 //CACHING FILES//
 const filesToCache = [
-  '/',
-  'index.html',
-  'css/offlime.css',
+  './',
+  './offline.html',
+  './css/offline.css',
 ];
 
 const staticCacheName = 'pages-cache-v1';
@@ -76,7 +76,14 @@ self.addEventListener('fetch', event => {
       console.log('Network request for ', event.request.url);
       return fetch(event.request)
 
-      // TODO 4 - Add fetched files to the cache
+      .then(response => {
+        // TODO 5 - Respond with custom 404 page
+        return caches.open(staticCacheName).then(cache => {
+          cache.put(event.request.url, response.clone());
+          return response;
+        });
+      });
+
 
     }).catch(error => {
 
