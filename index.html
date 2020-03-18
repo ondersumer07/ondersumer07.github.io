@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel='manifest' href='./manifest.json'>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#00adb5">
+  <meta name="msapplication-TileColor" content="#00adb5">
+  <meta name="theme-color" content="#00adb5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Vinematik</title>
+
+  <script src="https://kit.fontawesome.com/fcea854313.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="images/favicon.ico" type="image/png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,800|Ubuntu:700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <div class="header">
+
+      <div class="header-items">
+        <h1 class="header-title"><a href="#">Vinematik</a></h1>
+
+        <div class="header-buttons">
+
+          <button class="btn-light btn-outline-light btn-vine"><a href="https://forms.gle/HfHbjrFVALLm3wGt8" target="_blank">Vine Gönder</a></button>
+
+          <button id="btn-install" class="btn-light btn-outline-light btn-vine"><a href="guide.html">Uygulamayı indir </a><i class="fas fa-arrow-circle-down"></i></button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <section id="video-section">
+
+      <div class="vid">
+        <p class="small-mobile"><i>Sol tarafa kaydırarak bir sonraki vine'a geçebilirsin!</i></p>
+        <video class="video" height="720" width="1280" controls id="videoEl" autoplay>
+          <source id="vsrc" type='video/mp4' />
+          Please update your browser.
+        </video>
+
+        <a href="#" class="btn-next btn-light" onclick="newVideo()">Yeni Vine <i class="fas fa-angle-right"></i></a>
+
+        <button class="btn-light btn-outline-light btn-vine" id="btn-mobile"><a href="https://forms.gle/HfHbjrFVALLm3wGt8" target="_blank">Vine Gönder</a></button>
+
+        <button id="btn-install-mobile" class="btn-light btn-outline-light btn-vine"><a href="guide.html">Uygulamayı indir </a> <i class="fas fa-arrow-circle-down"></i></button>
+
+        <p class="small-laptop"><i>Sağ ok tuşuna basarak bir sonraki vine'a geçebilirsin!</i></p>
+      </div>
+      <p class="small-desktop"><i>Sağ ok tuşuna basarak bir sonraki vine'a geçebilirsin!</i></p>
+    </section>
+
+
+
+  </div>
+
+  <script src="sw.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
