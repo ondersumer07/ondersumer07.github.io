@@ -129,8 +129,8 @@ window.addEventListener("load", () => {
 });
 
 
-		function newVideo(){
-  document.getElementById("vsrc").src = "vid/" + Math.floor((Math.random() * 2200) + 1) + ".mp4";
+function newVideo(){
+  document.getElementById("vsrc").src = "vid/" + Math.floor((Math.random() * 3970) + 1) + ".mp4";
   document.getElementById("videoEl").load();
 }
 
